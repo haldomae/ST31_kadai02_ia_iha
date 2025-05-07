@@ -1,6 +1,7 @@
 package com.ia13a092_15_domaekazuki.kadai02
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +17,13 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        // 画面から部品を取得
+        var textview: TextView = findViewById(R.id.text)
+        // テキストの内容を変更
+        textview.text = "ミミッキュ"
+
+
+
+
     }
 }
